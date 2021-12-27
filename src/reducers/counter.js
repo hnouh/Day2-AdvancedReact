@@ -1,10 +1,11 @@
+import {increase} from '../actions/actions'
 const initialState ={
     counter:0
 }
 
 function counter(state=initialState, {type, payload}) {
     switch(type){
-        case 'INC-COUTER':
+        case increase:
             return {counter:state.counter+1}
         case 'DEC-COUTER':
             return {counter:state.counter-1}
@@ -17,7 +18,7 @@ export default counter;
 
 export const incCounter= (payload) =>{
     return {
-    type:'INC-COUTER',
+    type:increase,
     payload:payload
 }
 }
