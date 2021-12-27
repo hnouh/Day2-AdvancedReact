@@ -7,8 +7,10 @@ function counter(state=initialState, {type, payload}) {
     switch(type){
         case increase:
             return {counter:state.counter+1}
+            // return {counter:state.counter+payload}
         case 'DEC-COUTER':
             return {counter:state.counter-1}
+            // return {counter:state.counter-payload}
         case 'RESET-COUTER':
             return {counter:0}
         default: return state

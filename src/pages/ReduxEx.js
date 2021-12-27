@@ -16,9 +16,11 @@ const ReduxEx=()=>{
     return (
         <>
         <br></br>
-        <button onClick={()=> dispatch(incCounter(10))} >+</button>
+        {/* <button onClick={()=> dispatch(incCounter(10))} >+</button> */}
+        <button onClick={()=> dispatch(incCounter())} >+</button>
         <p>{state.counter}</p>
-        <button onClick={()=>dispatch(decCounter(10))} >-</button><br></br>
+        {/* <button onClick={()=>dispatch(decCounter(10))} >-</button><br></br> */}
+        <button onClick={()=>dispatch(decCounter())} >-</button><br></br>
         <button onClick={()=>dispatch(resetCounter())} >Reset Counter</button>
         <br></br>
         <br></br>
